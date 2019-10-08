@@ -1,0 +1,75 @@
+/* Settings for Bootstrap, esp. the Navbar */
+
+body {
+    background-color: #B0E0E6;
+}
+
+footer {
+    background: #4B0082;
+    text-align: center;
+    color: white;
+}
+
+.center {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+.left {
+  border-radius: 8px;
+    display: block;
+    margin-left: none;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+/* Style the button and place it in the upper left corner of the container/image */
+.container-fluid .btn {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translate(-10%, -10%);
+    -ms-transform: translate(-10%, -10%);
+    background-color: #4b0082;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.col-sm-4 .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4b0082;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* For leaflet - set map, body, and html to 100% of the screen size */
+#map,
+body,
+html {
+  height: 98%;
+}
