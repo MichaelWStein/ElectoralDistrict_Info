@@ -1,5 +1,7 @@
 // Electoral Information
 
+//var characteristics;
+
 //Function to build the map with electoral districts
 function build_map() {
 
@@ -26,13 +28,18 @@ function build_map() {
     d3.json("/prov_geojson")
         .then(function(data) {
             L.geoJSON(data).addTo(map)
+
             //console.log in case I want to review the data, remove at a later date
-            console.log(data)
+            data.features.forEach(logfunction);
+            function logfunction(data, index) {
+                console.log(data.properties.FEDNUM, index);
+            }            
         })
         .catch(function(error){
             console.log(error)
-        });
+        });      
 }
 
 //Calling the Function to build the map
 build_map();
+//console.log(characteristics);
